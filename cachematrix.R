@@ -1,5 +1,10 @@
+## These two function(makeCacheMatrix / casheSolve) will make a special 'matrix'
+## ,then it will cache them so that to use less computer resource to calculate the result.
+## Afterall, the result of the function, is "the inverse of original matrix",  
+## and that is computed by cached data.
+
 makeCacheMatrix <- function(x = matrix()) {
-##This function creates a special "matrix" object that can cache its inverse.
+## This function creates a special "matrix" object that can cache its inverse.
     m <- NULL
     set <- function(y) {
       x <<- y
